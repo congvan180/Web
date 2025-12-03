@@ -4,15 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="029f9af2-d6b3-4b45-ba93-d26dda647a7c" name="Changes" comment="" />
+    <list default="true" id="029f9af2-d6b3-4b45-ba93-d26dda647a7c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/oder_create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menu_items.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/update_status.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories_add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="35jLLtmYuLpOh6d9bECZVPlV67W" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,11 +42,19 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/xampp/htdocs/qr_order/admin/api/src/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\qr_order\admin\css" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
