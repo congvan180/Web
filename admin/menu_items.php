@@ -28,19 +28,19 @@ if(isset($_POST['add'])){
 
 include "header.php";
 ?>
-
+<link rel="stylesheet" href="css/menu_items.css">
 <h2>🍽 Quản lý món ăn</h2>
 
 <!-- Add form -->
 <form method="post" enctype="multipart/form-data" class="add-form">
     <input type="text" name="name" placeholder="Tên món" required>
+     <input type="number" name="price" placeholder="Giá (đ)" required>
     <select name="category_id" required>
         <option value="">-- Chọn danh mục --</option>
         <?php while($c = $cats_res->fetch_assoc()): ?>
             <option value="<?= $c['id'] ?>"><?= htmlspecialchars($c['name']) ?></option>
         <?php endwhile; ?>
     </select>
-    <input type="number" name="price" placeholder="Giá (đ)" required>
     <textarea name="description" placeholder="Mô tả"></textarea>
     <input type="file" name="image" accept="image/*">
     <button type="submit" name="add">Thêm món</button>
@@ -51,8 +51,17 @@ include "header.php";
 <thead><tr><th>ID</th><th>Ảnh</th><th>Tên</th><th>Danh mục</th><th>Giá</th><th>Trạng thái</th></tr></thead>
 <tbody>
 <?php
-$res2 = $conn->query("SELECT m.*, c.name AS catname FROM menu_items m LEFT JOIN categories c ON m.category_id=c.id ORDER BY m.id DESC");
+$res2 = $conn->query("SELECT m.*, c.name AS catname
+                      FROM menu_items m
+                      LEFT JOIN categories c ON m.category_id=c.id
+                      ORDER BY m.id DESC");
+
+if(!$res2){
+    die("Lỗi SQL: " . $conn->error);
+}
+
 while($r = $res2->fetch_assoc()):
+
 ?>
 <tr>
     <td><?= $r['id'] ?></td>

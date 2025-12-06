@@ -1,0 +1,192 @@
+/* ==================== INDEX.CSS - DASHBOARD ĐẸP 2025 ==================== */
+
+/* BODY */
+body {
+    background: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* WRAPPER */
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ==================== SIDEBAR ==================== */
+.sidebar {
+    width: 250px;
+    background: #1f2937;
+    color: #fff;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.sidebar .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 14px 20px;
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.sidebar nav a.active,
+.sidebar nav a:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+/* ==================== MAIN ==================== */
+.main {
+    flex: 1;
+    padding: 30px 35px;
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 18px 25px;
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+/* ==================== DASHBOARD CARDS ==================== */
+.dashboard-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.dashboard-stats .card {
+    flex: 1 1 calc(25% - 25px);
+    background: #fff;
+    border-radius: 18px;
+    padding: 30px 25px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s;
+    min-width: 220px;
+}
+
+.dashboard-stats .card.highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+.dashboard-stats .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.dashboard-stats .card p {
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.dashboard-stats .card.highlight p {
+    color: #f0f0f0;
+}
+
+.dashboard-stats .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+}
+
+/* ==================== WELCOME BOX ==================== */
+.welcome-box {
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.welcome-box h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.welcome-box p {
+    font-size: 15px;
+    color: #4b5563;
+    margin-bottom: 15px;
+}
+
+.welcome-box ul {
+    padding-left: 20px;
+}
+
+.welcome-box ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* ==================== BUTTONS ==================== */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.3);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1200px) {
+    .dashboard-stats .card {
+        flex: 1 1 calc(50% - 25px);
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-wrapper {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        padding: 20px 10px;
+    }
+    .sidebar nav a {
+        margin-right: 10px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+    .dashboard-stats .card {
+        flex: 1 1 100%;
+    }
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

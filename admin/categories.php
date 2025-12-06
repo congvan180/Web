@@ -31,6 +31,7 @@ if (isset($_GET['toggle'])) {
 
 include "header.php";
 ?>
+<link rel="stylesheet" href="css/categories.css">
 
 <h2>📂 Quản lý danh mục</h2>
 

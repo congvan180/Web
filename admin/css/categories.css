@@ -1,0 +1,223 @@
+/* ==================== CATEGORIES.CSS - ĐỒNG BỘ VỚI MÓN ĂN 2025 ==================== */
+
+/* BODY */
+body {
+    background: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* H2 */
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin: 30px 0 40px;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+/* ==================== FORM THÊM DANH MỤC ==================== */
+.add-form {
+    background: #fff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.09);
+    max-width: 600px;
+    margin: 0 auto 60px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.add-form input[type="text"] {
+    flex: 1;
+    padding: 14px 18px;
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: #fafbfd;
+    transition: all 0.3s;
+}
+
+.add-form input:focus {
+    outline: none;
+    border-color: #667eea;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(102,126,234,0.18);
+}
+
+.add-form button {
+    padding: 15px 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.add-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(102,126,234,0.4);
+}
+
+/* ==================== BẢNG DANH SÁCH ==================== */
+.admin-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+    border-collapse: collapse;
+}
+
+.admin-table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 18px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-table th {
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.admin-table tbody tr {
+    transition: all 0.3s;
+}
+
+.admin-table tbody tr:hover {
+    background-color: #f8f9ff;
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Trạng thái danh mục */
+.admin-table td.status {
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+    display: inline-block;
+}
+
+.admin-table td.status.active {
+    background: #dcfce7;
+    color: #27ae60;
+}
+
+.admin-table td.status.inactive {
+    background: #fee2e2;
+    color: #e74c3c;
+}
+
+/* ==================== BUTTONS ==================== */
+.btn-edit,
+.btn-toggle {
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s;
+    margin-right: 5px;
+}
+
+.btn-edit {
+    background: #f97316;
+}
+
+.btn-edit:hover {
+    background: #ea580c;
+}
+
+.btn-toggle {
+    background: #64748b;
+}
+
+.btn-toggle:hover {
+    background: #475569;
+}
+
+/* ==================== MODAL ==================== */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none; /* mặc định ẩn */
+}
+
+.modal-content {
+    width: 360px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: #2c3e50;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #e1e5e9;
+}
+
+.modal-content button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.modal-content button[name=edit] {
+    background: #0284c7;
+    color: white;
+}
+
+.modal-content button:last-child {
+    background: #9ca3af;
+    color: white;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .add-form {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .admin-table th,
+    .admin-table td {
+        padding: 12px 8px;
+        font-size: 14px;
+    }
+    .modal-content {
+        width: 90%;
+        margin: 0 10px;
+    }
+}
